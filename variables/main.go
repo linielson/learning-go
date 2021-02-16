@@ -2,8 +2,9 @@ package main
 
 import "fmt"
 
-	var y string = "Hello"
-	var w, z string = "H", "W"
+//Type can be ommitted
+var y string = "Hello"
+var w, z string = "H", "W"
 
 func main()  {
 	a := 10
@@ -42,4 +43,5 @@ func main()  {
 	fmt.Printf("%T \n", z)
 	fmt.Printf("%T \n", x)
 
+	funcWithConst()
 }
