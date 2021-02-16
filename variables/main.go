@@ -44,4 +44,21 @@ func main()  {
 	fmt.Printf("%T \n", x)
 
 	funcWithConst()
+	moreExamples()
+}
+
+func moreExamples() {
+	var withVar = 1
+	var withVarAndType int = 2
+	shortVar := 3
+
+	fmt.Println(withVar, withVarAndType, shortVar)
+	//withVar = "Now I am a STRING" //cannot use "Now I am a STRING" (type untyped string) as type int in assignment
+	//fmt.Println(withVar)
+
+	//withVarAndType = "Now I am a STRING" //cannot use "Now I am a STRING" (type untyped string) as type int in assignment
+	//fmt.Println(withVarAndType)
+
+	//shortVar = "Now I am a STRING" //cannot use "Now I am a STRING" (type untyped string) as type int in assignment
+	//fmt.Println(shortVar)
 }
