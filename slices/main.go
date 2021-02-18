@@ -20,7 +20,8 @@ func main() {
 	fmt.Println("cap:", cap(slice)) //exceeded capacity, doubled capacity
 
 	//forInSlice()
-	pointer()
+	//pointer()
+	sliceSlice()
 }
 
 func forInSlice() {
@@ -57,5 +58,22 @@ func pointer() {
 
 	fmt.Println(slice)
 	fmt.Println(sliceTest)
+
+}
+
+func sliceSlice() {
+	//array: sliceString := [10]string {
+	//slice: sliceString := []string {
+	sliceString := []string {
+		"Hello",
+		"World",
+		"Much",
+		"Better",
+	}
+	fmt.Println(sliceString)
+	fmt.Println(sliceString[0]) //Hello
+	fmt.Println(sliceString[:2]) //:2 quantity //Hello World
+	fmt.Println(sliceString[1:2]) //Off position 1 until quantity 2 // World
+	fmt.Println(sliceString[2:]) //2: start position until infinite // Much Better
 
 }
