@@ -1,8 +1,8 @@
 package main
 
 import (
-	"another_package"
 	"fmt"
+	"github.com/linielson/learning-go/another_package"
 )
 
 func main() {
